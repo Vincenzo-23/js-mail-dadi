@@ -20,7 +20,7 @@ userButton.addEventListener("click", function(){
         console.log("Il numero del giocatore è ", playerNumber)
     //stampare in pagina questa variabile
         //tramite innerHTML aggiungo in corrispondenza della variabile showPlayerNumber il playerNumber nel DOM
-        showPlayerNumber.innerHTML += `${playerNumber}`
+        showPlayerNumber.innerHTML = `${playerNumber}`
 
 
         
@@ -31,7 +31,7 @@ userButton.addEventListener("click", function(){
         console.log("Il numero del computer è ", CPUNumber)
     //stampare in pagina questa variabile
         //tramite innerHTML aggiungo in corrispondenza della variabile showCPUNumber il CPUNumber nel DOM
-        showCPUNumber.innerHTML += `${CPUNumber}`
+        showCPUNumber.innerHTML = `${CPUNumber}`
 
 
 
@@ -41,8 +41,11 @@ userButton.addEventListener("click", function(){
             console.log("hai vinto!")
             //stampare in pagina "Hai vinto!"
                 //tramite innerHTML aggiungo in corrispondenza della variabile gameResult il messaggio "hai vinto!" nel DOM
-            gameResult.innerHTML += `Hai vinto!`
+            gameResult.innerHTML = `Hai vinto!`
 
+
+            
+         
             //ALTRIMENTI SE il playerNumber === CPUNumber
         }else if (playerNumber === CPUNumber){
 
@@ -50,7 +53,9 @@ userButton.addEventListener("click", function(){
             console.log("Pareggio!")
             //stampare in pagina "Pareggio!"
                 //tramite innerHTML aggiungo in corrispondenza della variabile gameResult il messaggio "Pareggio!" nel DOM
-            gameResult.innerHTML += `Pareggio!`
+            gameResult.innerHTML = `Pareggio!`
+
+            
 
             //ALTRIMENTI
         }else{
@@ -58,8 +63,9 @@ userButton.addEventListener("click", function(){
             console.log("Hai perso!")  
             //stampare in pagina "Hai perso!"
                 //tramite innerHTML aggiungo in corrispondenza della variabile gameResult il messaggio "Hai perso!" nel DOM
-            gameResult.innerHTML += `Hei perso!`  
-
+            gameResult.innerHTML = `Hai perso!`
+            
+          
         }
 
 })

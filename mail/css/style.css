@@ -1,0 +1,19 @@
+body{
+    background-color: #1b1b1b;
+    color: white;
+}
+
+.color_green{
+    color: green;
+    margin-top: 24px;
+    font-size: 32px;
+    font-weight: 700;
+}
+
+
+.color_red{
+    color: red;
+    margin-top: 24px;
+    font-size: 32px;
+    font-weight: 700;
+}
